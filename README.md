@@ -1,0 +1,2 @@
+# solitaire
+Pure JS Solitaire
