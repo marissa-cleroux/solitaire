@@ -1,0 +1,344 @@
+html {
+	margin: 0;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	background-color: #fff;
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100%;
+	background: linear-gradient(to bottom, #fff, #d3cce3);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+html,
+body {
+	height: 100vh;
+}
+
+#wrapper {
+	margin: auto;
+	width: 100%;
+}
+
+h1 {
+	display: none;
+}
+
+main {
+	margin-top: 1em;
+	width: 100%;
+	position: relative;
+	height: 75%;
+}
+
+#tableau {
+	font-family: 'Abel', sans-serif;
+	color: #fff;
+	font-size: 1.5em;
+	background-color: #000;
+	margin-left: 0;
+	margin-right: 0;
+	height: 75vh;
+	z-index: 5;
+}
+
+h2 {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #00FFFF;
+	float: left;
+}
+
+#version {
+	font-size: 0.5em;
+	color: #FFF;
+	padding-bottom: 7px;
+}
+
+h3 {
+	font-family: 'Lobster', cursive;
+	font-weight: normal;
+	clear: both;
+}
+
+h3 {
+	margin-left: 50px;
+}
+
+input {
+	font-family: inherit;
+	font-size: 0.7em;
+	margin: 1px 3px 7px 0px;
+}
+
+.lbl {
+	display: inline-block;
+	width: 40%;
+	text-align: right;
+}
+
+span {
+	position: absolute;
+}
+
+#moneySlider,
+#betSlider {
+	margin-top: 10px;
+	height: 10px;
+	display: inline-block;
+	width: 40%;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	margin-left: -0.1em;
+}
+
+.ui-slider .ui-slider-handle {
+	width: 0.5em;
+	height: 0.75em;
+}
+
+#moneyAmt {
+	display: inline;
+	margin-left: 41%;
+}
+
+#betForm {
+	display: block;
+	margin: 30px auto auto auto;
+}
+
+#betForm>p {
+	margin-bottom: 15px;
+}
+
+.btn {
+	padding: 5px 13px 5px 13px;
+	font-weight: bold;
+	background-color: teal;
+	color: #000;
+	border-color: #fff;
+	margin-top: 15px;
+	margin-left: 41%;
+}
+
+.btn:hover {
+	background-color: #fff;
+	border-color: teal;
+}
+
+#quit {
+	border-color: #ff0000;
+	display: none;
+	clear: both;
+}
+
+#newGame {
+	display: none;
+	margin-right: 80px;
+}
+
+.gameBtn {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	z-index: 10;
+}
+
+#winnings,
+.rainDrop {
+	position: relative;
+}
+
+p {
+	padding: 5px;
+}
+
+#playing {
+	display: none;
+	height: 100%;
+}
+
+#row-top {
+	display: flex;
+	flex-flow: row;
+	position: relative;
+	margin-left: auto;
+	margin-right: 0;
+	height: 16%;
+}
+
+#wastePile {
+	width: 20vw;
+}
+
+#row-display {
+	display: inline-block;
+}
+
+#row-bottom {
+	display: block;
+	position: relative;
+	height: 75%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#row-foundation {
+	position: absolute;
+	right: 10px;
+}
+
+.card {
+	display: inline-block;
+}
+
+.card>img,
+.card {
+	height: 45px;
+}
+
+.card>img {
+	position: absolute;
+}
+
+#aMessage {
+	font-size: 1em;
+}
+
+#triangle {
+	max-width: 15px;
+}
+
+#playAgain {
+	display: none;
+}
+
+#instructions>h3 {
+	margin: 10px 0px 10px 5px;
+}
+
+#galaxy {
+	display: none;
+}
+
+footer {
+	position: absolute;
+	max-width: 75%;
+	margin-left: 8px;
+	margin-right: 1.2em;
+	z-index: 10;
+	height: 200px;
+}
+
+h4 {
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 0;
+	font-family: 'Able', sans-serif;
+	font-size: 2em;
+	background-color: #008080;
+}
+
+footer p {
+	margin-top: 5px;
+	font-family: 'Abel', sans-serif;
+	background-color: #fff;
+}
+
+a {
+	color: #000;
+}
+
+.error,
+.errorTxt {
+	color: #ff0000;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 1px 1px #d3d3d3;
+}
+
+.errorBorder {
+	border: solid 2px #00FFFF;
+}
+
+@media (min-width: 350px) {
+	.card>img,
+	.card {
+		height: 70px;
+	}
+}
+
+@media (min-width: 440px) {
+	h1 {
+		display: block;
+		font-family: 'Lobster', sans-serif;
+		position: absolute;
+		top: 5em;
+		right: 0;
+		text-align: center;
+		margin-right: -85px;
+		transform: rotate(90deg);
+		font-size: 1.4em;
+	}
+	#tableau {
+		margin-right: 1.2em;
+	}
+	#row-bottom,
+	#row-top {
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 650px) {
+	.mobile {
+		display: none;
+	}
+	#row-bottom {
+		margin-top: 75px;
+	}
+	.gameBtn {
+		bottom: 98%;
+		right: 100px;
+	}
+	#tableau {
+		margin-left: 10px;
+		margin-top: 30px;
+		height: 80vh;
+	}
+	h4 {
+		color: #000;
+		display: inline;
+		padding: 5px;
+	}
+	.listCards {
+		width: 7%;
+		font-family: 'Abel', sans-serif;
+		font-size: 0.6em;
+	}
+	.card>img,
+	.card {
+		height: 100px;
+	}
+	#row-foundation {
+		right: 100px;
+	}
+}
+
+@media (min-width: 1068px) {
+	#row-bottom {
+		margin-top: 100px;
+	}
+	.card>img,
+	.card {
+		height: 125px;
+	}
+}

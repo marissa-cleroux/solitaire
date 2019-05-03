@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sturmfrei Solitaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Fjalla+One|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <main>
+            <h1>Precious Solitude Casino</h1>
+            <div id="tableau">
+                <h2>Welcome to STURMFREI
+                    <span id="version"></span>
+                </h2>
+                <h3>Enjoy your alone time with some solitaire</h3>
+                <input type="button" name="newGame" id="newGame" value="NEW GAME" class="btn gameBtn">
+                <input type="button" name="quit" id="quit" value="QUIT" class="btn gameBtn">
+                <div id="playing">
+                    <div id="row-top">
+
+                        <img src="images/cards/BackgroundBlack.png" class="card" id="stockPile">
+                        <div id="wastePile" class="card"></div>
+
+                        <div id="row-foundation">
+                            <img src="images/heart.png" id="foundationHeart" class="foundation card" alt="Playing card">
+                            <img src="images/club.png" id="foundationClub" class="foundation card" alt="Playing card">
+                            <img src="images/diamond.png" id="foundationDiamond" class="foundation card" alt="Playing card">
+                            <img src="images/spade.png" id="foundationSpade" class="foundation card" alt="Playing card">
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                    <div id="row-bottom">
+                        <div id="columnOne" class="card card-bottom"></div>
+                        <div id="columnTwo" class="card card-bottom"></div>
+                        <div id="columnThree" class="card card-bottom"></div>
+                        <div id="columnFour" class="card card-bottom"></div>
+                        <div id="columnFive" class="card card-bottom"></div>
+                        <div id="columnSix" class="card card-bottom"></div>
+                        <div id="columnSeven" class="card card-bottom"></div>
+                    </div>
+                </div>
+                <div id="endGame">
+                    <p id="aMessage"></p>
+                    <input type="button" name="play" id="playAgain" value="PLAY AGAIN" class="btn">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!--<div id="about">
+              <h4 id="userInfoTitle"> PLAYER INFORMATION: </h4>
+              <div id="userInformation" class="text-center">
+              </div>
+              <div><p><a id="changeCredentials" href="intro.html"> Change your credentials</a></p></div>-->
+            <div id="credit">Sparkle and raindrop icons made by
+                <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+            <div>Shooting star icons made by
+                <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+            <!--</div>-->
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="js/solitaire.js"></script>
+
+</body>
+
+</html>
