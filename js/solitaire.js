@@ -1,8 +1,9 @@
-// Drag and drop without jQuery?
-// Give hints
-// Optimize checking for loses (sees all the possibilities?!)
-// Different messages for quitting and losing
-// Optimize animations
+// TODO: Drag and drop without jQuery?
+// TODO: Give hints
+// TODO: Optimize checking for loses (sees all the possibilities?!)
+// TODO: Different messages for quitting and losing
+// TODO: Optimize animations
+// TODO: Show different screen when new game vs. losing
 
 var $$ = function (id) {
     return document.getElementById(id)
