@@ -4,6 +4,7 @@
 // TODO: Different messages for quitting and losing
 // TODO: Optimize animations
 // TODO: Show different screen when new game vs. losing
+// TODO: Refactor to use class?
 
 var $$ = function (id) {
     return document.getElementById(id)
